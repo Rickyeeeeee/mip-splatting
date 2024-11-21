@@ -60,6 +60,7 @@ class ModelParams(ParamGroup):
         self.resample_gt_image = False
         self.load_allres = False
         self.sample_more_highres = False
+        self.sample_interval = 1
         super().__init__(parser, "Loading Parameters", sentinel)
 
     def extract(self, args):
